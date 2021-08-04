@@ -1,0 +1,77 @@
+.editors-news{
+    margin-top: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: initial;
+    color: #000000;
+    text-align: left;
+    .main-title{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        .col-lg-3{
+            .d-flex{
+                position: relative;
+                .section-title {
+                    font-size: 22px;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.14;
+                    letter-spacing: normal;
+                    color: #3e8177;
+                    margin-bottom: 22px;
+                }
+                .section-title:after {
+                    content: "";
+                    width: 50px;
+                    height: 3px;
+                    background: #3e8177;
+                    position: absolute;
+                    left: 155px;
+                    top: 14px;
+                }
+            }
+        }
+    }
+    .card-content{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        .image-hover {
+            overflow: hidden;
+            .thumb-title {
+                padding: 14px 24px;
+                background: #000;
+                font-size: 12px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                color: #ffffff;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .thumb-title, img {
+                transition: transform 0.4s;
+            }
+        }
+        .image-hover:hover{
+            img {
+               transform: scale(1.25);
+            }
+            .thumb-title {
+                background: #0a62fb;
+            }
+        } 
+        .prop-card{
+            height: 270px;
+        }
+        .font-weight-600{
+            font-weight :600;
+        }
+    }
+}
