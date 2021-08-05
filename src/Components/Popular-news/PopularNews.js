@@ -1,6 +1,6 @@
 import React from 'react'
 import PopularNewsContents from './PopularNewsContents'
-import {Container, Row, Col} from 'reactstrap'
+import { Row, Col} from 'reactstrap'
 import './popularnews.scss'
 
 const PopularNews = () => {
@@ -35,7 +35,7 @@ const PopularNews = () => {
         }
     ]
   return (
-            <Container className="editors-news">
+            <section className="editors-news">
                 <Row className="main-title">
                     <Col lg={3}>
                         <div class="d-flex position-relative float-left">
@@ -44,7 +44,7 @@ const PopularNews = () => {
                     </Col>
                 </Row>
                 <PopularNewsContents popularproducts={popularproducts}/>
-            </Container>
+            </section>
   );
 }
 

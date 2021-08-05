@@ -1,14 +1,14 @@
 import React from 'react'
 import Maincard from './Maincard'
 import './popularnews.scss'
-import {Card, CardBody, Col, Row} from 'reactstrap'
+import { Col, Row} from 'reactstrap'
 
 const PopularNewsContents  = (props) => {
     const popularproducts = props.popularproducts.map(popularproducts => (
-            <Col sm={6} className="mb-3 prop-card">
+            <Col sm={6} className="mb-3 mb-sm-4 prop-card position-relative">
                  <Col sm={6} className="mb-5 mb-sm-2 w-100" key={popularproducts.id}>
                         <div className="position-relative image-hover">
-                               <img src={popularproducts.img} className="img-fluid" alt="world-news" />
+                               <img src={popularproducts.img} className="img-fluid w-100" alt="world-news" />
                                <span className="thumb-title">{popularproducts.thumbtitle}</span>
                         </div>
                         <div>

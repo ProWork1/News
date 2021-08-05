@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 .editors-news{
+    position: relative;
     margin-top: 30px;
+    padding: 50px 90px;
     font-family: "Montserrat", sans-serif;
     font-weight: initial;
     color: #000000;
@@ -20,7 +24,7 @@
                     line-height: 1.14;
                     letter-spacing: normal;
                     color: #3e8177;
-                    margin-bottom: 22px;
+                    margin-bottom: 30px;
                 }
                 .section-title:after {
                     content: "";
@@ -28,8 +32,8 @@
                     height: 3px;
                     background: #3e8177;
                     position: absolute;
-                    left: 155px;
-                    top: 14px;
+                    left: 165px;
+                    top: 13px;
                 }
             }
         }
@@ -67,11 +71,16 @@
                 background: #0a62fb;
             }
         } 
-        .prop-card{
-            height: 270px;
+        .font-weight-700{
+            font-weight :700;
         }
         .font-weight-600{
             font-weight :600;
         }
+    }
+}
+@media (max-width:570px){
+    .editors-news{
+        padding: 20px;
     }
 }
