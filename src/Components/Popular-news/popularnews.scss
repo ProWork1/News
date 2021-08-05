@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+.editors-news{
+    position: relative;
+    margin-top: 30px;
+    padding: 50px 90px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: initial;
+    color: #000000;
+    text-align: left;
+    .main-title{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        .col-lg-3{
+            .d-flex{
+                position: relative;
+                .section-title {
+                    font-size: 22px;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.14;
+                    letter-spacing: normal;
+                    color: #3e8177;
+                    margin-bottom: 30px;
+                }
+                .section-title:after {
+                    content: "";
+                    width: 50px;
+                    height: 3px;
+                    background: #3e8177;
+                    position: absolute;
+                    left: 165px;
+                    top: 13px;
+                }
+            }
+        }
+    }
+    .card-content{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        .image-hover {
+            overflow: hidden;
+            .thumb-title {
+                padding: 14px 24px;
+                background: #000;
+                font-size: 12px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                color: #ffffff;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .thumb-title, img {
+                transition: transform 0.4s;
+            }
+        }
+        .image-hover:hover{
+            img {
+               transform: scale(1.25);
+            }
+            .thumb-title {
+                background: #0a62fb;
+            }
+        } 
+        .font-weight-700{
+            font-weight :700;
+        }
+        .font-weight-600{
+            font-weight :600;
+        }
+    }
+}
+@media (max-width:570px){
+    .editors-news{
+        padding: 20px;
+    }
+}
