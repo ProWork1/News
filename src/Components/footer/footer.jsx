@@ -178,21 +178,23 @@ export default function Footer() {
                         ))}
                     </div>
                 </div>
-                <div className="d-lg-flex d-block justify-content-between align-items-center my-5">
+                <div className="d-lg-flex d-block text-center justify-content-between align-items-center my-5">
                     <div className="footer_logo mb-3">
                         <img src="./images/logo.svg" alt="" />
                     </div>
-                    <div className="d-flex align-items-center">
+                    <div className="d-flex align-items-center ">
                         <div>
                             <p className = "footer_text d-lg-block d-none mt-3">Follow on</p>
                         </div>
-                        {icon.map(({name,url}) => (
-                            <div className="footer_messanger" key = {name}>
-                                <Link to={url}>
-                                    <i className = {name}></i>
-                                </Link>
-                            </div>
-                        ))}
+                        <div className="mx-auto d-flex">
+                            {icon.map(({name,url}) => (
+                                <div className="footer_messanger " key = {name}>
+                                    <Link to={url}>
+                                        <i className = {name}></i>
+                                    </Link>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <hr />
@@ -207,8 +209,8 @@ export default function Footer() {
                         <Link to="#">Sitemap</Link>
                     </div>
                     <div className = "d-flex">
-                        <p>© 2020</p>
-                        <Link to="#">@ BootstrapDash, </Link>
+                        <p>© 2020 </p>
+                        <Link to="#"> @ BootstrapDash, </Link>
                         <p>Inc.All Rights Reserved.</p>
                     </div>
                 </div>
