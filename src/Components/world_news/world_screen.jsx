@@ -33,11 +33,11 @@ const card = [
     },
 ]
 
-export default function World_screen() {
+export default function WorldScreen() {
     
     return (
         <>
-            <div className="container">
+            <div className="container mt-5">
                 <p className = "world_theme">
                     world news
                 </p>
