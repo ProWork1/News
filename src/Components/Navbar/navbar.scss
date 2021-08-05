@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+#header{
+    background: white !important;
+    .navbar {
+        font-weight: 500;
+        padding: 0;
+        display: block;
+        position: relative;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .navbar-top {
+            padding: 32px 0;
+            border-bottom: 1px solid #dbdbdb;
+            .navbar-left, .navbar-right {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;
+                    color: #000;
+                    font-size: 12px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 2.08;
+                    letter-spacing: normal;
+                    padding-right: 42px;
+                    
+                }
+            }
+            .navbar-right{
+                li{
+                    list-style: none;
+                    padding-right: 0;
+                    a {
+                        color: #000;
+                        font-size: 12px;
+                        padding: 0 5px;
+                        border-right: 1px solid #dbdbdb;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .social-media {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                padding-left: 22px;
+                li {
+                    padding: 0 4px;
+                    a {
+                        padding: 2px 4px;
+                        background-color: #000;
+                        border-radius: 4px;
+                        color: #ffffff;
+                        .i{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }    
+            .navbar-brand {
+                margin-right: 0;
+                img {
+                    vertical-align: middle;
+                    border-style: none;
+                }
+            }
+        }
+        .navbar-bottom-menu {
+            border-bottom: 1px solid #dbdbdb;
+            .navbar-close {
+                display: none;
+                cursor: pointer;
+            }
+            .nav-item{
+                padding-right: 42px;
+                padding-left: 0;
+                .nav-link {
+                    padding: 22px 0;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.31;
+                    letter-spacing: normal;
+                    color: #000;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: 999px){
+    .navbar-top{
+        .navbar-brand img {
+            width: 170px;
+        }
+        .navbar-left, .navbar-right {
+           display: none !important;
+        }
+        .social-media {
+            display: none !important;
+        }
+    }
+    .navbar-bottom-menu{ 
+        .navbar-toggler {
+            position: absolute;
+            top: 30px;
+            right: 0;
+            color: #0a62fb;
+        }   
+        .collapse{
+            right: 0;
+            width: 90%;
+            position: absolute;
+            background: white;
+        }
+        .navbar-collapse{
+            button {
+                margin-bottom: 10px;
+            }
+            .navbar-close {
+                background: transparent;
+                border: none;
+                position: fixed;
+                right: 20px;
+                top: 20px;
+                display: none;
+                font-size: 20px;
+            }
+        }
+        .nav-item {
+            padding-right: 22px;
+        }
+    }
+}
