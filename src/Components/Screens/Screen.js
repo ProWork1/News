@@ -1,9 +1,12 @@
 import React from 'react'
+import Editor from '../Editor/Editor'
+import Index from '../Section1'
 
 function Screen() {
     return (
         <div>
-            <h1>Screen</h1>
+            <Index />
+            <Editor />
         </div>
     )
 }

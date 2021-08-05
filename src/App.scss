@@ -1,3 +1,14 @@
+// <<<<<<< HEAD
+.App {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .App {
+    width: 95%;
+  }
+}
+// =======
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
 *{
@@ -6,3 +17,4 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+// >>>>>>> 60c9b789a57486ececf55ae4254f7d7fcfd9daf5
