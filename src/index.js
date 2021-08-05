@@ -9,8 +9,9 @@ import 'swiper/components/zoom/zoom.min.css'
 import 'swiper/components/navigation/navigation.min.css'
 import 'swiper/components/pagination/pagination.min.css'
 import { BrowserRouter } from 'react-router-dom'
+import 'bootstrap/js/src/carousel'
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter >
     <App />
   </BrowserRouter>,
   document.getElementById('root')
