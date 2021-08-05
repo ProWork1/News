@@ -180,7 +180,7 @@ export default function Footer() {
                 </div>
                 <div className="d-lg-flex d-block text-center justify-content-between align-items-center my-5">
                     <div className="footer_logo mb-3">
-                        <img src="./images/logo.svg" alt="" />
+                        <img className = "w-100" src="./images/logo.svg" alt="" />
                     </div>
                     <div className="d-flex align-items-center ">
                         <div>
@@ -208,7 +208,7 @@ export default function Footer() {
                         <Link to="#">License.</Link>
                         <Link to="#">Sitemap</Link>
                     </div>
-                    <div className = "d-flex">
+                    <div className = "d-flex flex-wrap">
                         <p>© 2020 </p>
                         <Link to="#"> @ BootstrapDash, </Link>
                         <p>Inc.All Rights Reserved.</p>
