@@ -44,7 +44,7 @@ export default function WorldScreen() {
                 <div className="row">
                     {/* map to use; card array */}
                     {card.map(({image,theme,text1,text2,text3}) => (
-                        <div className="col-lg-3 col-md-6 col-12 world_card">
+                        <div className="col-lg-3 col-md-6 col-12 world_card mt-sm-4">
                             <div>
                                 <img src={image} alt="" />
                                 <div><p>{theme}</p></div>
