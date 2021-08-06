@@ -122,9 +122,9 @@
             color: #0a62fb;
         }   
         .collapse{
-            right: 0;
-            width: 90%;
-            position: absolute;
+            right: 0 !important;
+            width: 80%;
+            position: fixed;
             background: white;
         }
         .navbar-collapse{
