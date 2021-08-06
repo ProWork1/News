@@ -42,6 +42,6 @@
     ]
   },
   "devDependencies": {
-    "@iconify/react": "^3.0.0-beta.1"
+    "@iconify/react": "^1.1.4"
   }
 }
