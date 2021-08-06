@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Col, Container, Row } from 'reactstrap'
 import './footer.scss'
 
 const menus = [
@@ -147,37 +148,37 @@ const icon = [
 export default function Footer() {
     return (
         <>
-            <div className="container mt-5 " id = "footer">
+            <Container className=" mt-5 " id = "footer">
                 <hr />
-                <div className="row">
+                <Row>
                     {menus.map(({id, title}) => (
-                        <div className="col-3" key = {title}>
-                            <a href= {id} className = "nav-link">{title}</a>
-                        </div>
+                        <Col xs = "3" key = {title}>
+                            <Link to= {id} className = "nav-link">{title}</Link>
+                        </Col>
                     ))}
-                </div>
-                <div className="row">
-                    <div className="col-3 mt-4" >
+                </Row>
+                <Row>
+                    <Col xs = "3" className=" mt-4" >
                         {menu1.map(({id, title}) => (
-                            <a href= {id} className = "nav-link" key = {title}>{title}</a>
+                            <Link to= {id} className = "nav-link" key = {title}>{title}</Link>
                         ))}
-                    </div>
-                    <div className="col-3 mt-4" >
+                    </Col>
+                    <Col xs = "3" className=" mt-4" >
                         {menu2.map(({id, title}) => (
-                            <a href= {id} className = "nav-link" key = {title}>{title}</a>
+                            <Link href= {id} className = "nav-link" key = {title}>{title}</Link>
                         ))}
-                    </div>
-                    <div className="col-3 mt-4" >
+                    </Col>
+                    <Col xs = "3" className=" mt-4" >
                         {menu3.map(({id, title}) => (
-                            <a href= {id} className = "nav-link" key = {title}>{title}</a>
+                            <Link to= {id} className = "nav-link" key = {title}>{title}</Link>
                         ))}
-                    </div>
-                    <div className="col-3 mt-4" >
+                    </Col>
+                    <Col xs = "3" className=" mt-4" >
                         {menu4.map(({id, title}) => (
-                            <a href= {id} className = "nav-link" key = {title}>{title}</a>
+                            <Link to= {id} className = "nav-link" key = {title}>{title}</Link>
                         ))}
-                    </div>
-                </div>
+                    </Col>
+                </Row>
                 <div className="d-lg-flex d-block text-center justify-content-between align-items-center my-5">
                     <div className="footer_logo mb-3">
                         <img className = "w-100" src="./images/logo.svg" alt="" />
@@ -214,7 +215,7 @@ export default function Footer() {
                         <p>Inc.All Rights Reserved.</p>
                     </div>
                 </div>
-            </div>
+            </Container>
         </>
     )
 }
