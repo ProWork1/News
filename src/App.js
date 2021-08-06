@@ -1,4 +1,5 @@
 import './App.scss';
+import Navbar from './Components/Navbar/Navbar';
 import Blog from './Components/blogScreen/blog';
 import Screen from './Components/Screens/Screen';
 import Footer from './Components/footer/footer';
@@ -8,11 +9,15 @@ import WorldScreen from './Components/world_news/world_screen';
 function App() {
   return (
     <div className="App">
-      <Screen/>
-      <Blog/>
-      <WorldScreen/>
-      <PopularNews />
-      <Footer/>
+      <Navbar />
+      <div className="App-body">
+        <Screen/>
+        <Blog/>
+        <WorldScreen/>
+        <PopularNews />
+        <Footer/>
+      </div>
+      
     </div>
   );
 }

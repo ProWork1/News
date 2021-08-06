@@ -1,11 +1,17 @@
 // <<<<<<< HEAD
 .App {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
 }
+.App-body{
+  width: 80%;
+  padding: 170px 0;
+  margin: 0 auto 0 auto;
+}
+
 @media (max-width: 600px) {
-  .App {
+  .App-body{
     width: 95%;
+    padding: 95px 0;
   }
 }
 // =======
@@ -17,4 +23,3 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
-// >>>>>>> 60c9b789a57486ececf55ae4254f7d7fcfd9daf5
