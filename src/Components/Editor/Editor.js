@@ -1,5 +1,6 @@
 import React from 'react'
-import Col from './col'
+import { Row, Col } from 'reactstrap'
+import Cols from './col'
 import './style.scss'
 import bir from './img/1.jpg'
 import ikki from './img/2.jpg'
@@ -10,28 +11,30 @@ import olti from './img/6.jpg'
 import yetti from './img/7.jpg'
 import play from './img/play.png'
 
+
+
 function Editor() {
     return (
         <div className={"editor"}>
-            <div className={"row"}>
+            <Row>
                 <div className={"title col-lg-3"}>
                     <h3 className={"h-title"}>
                         Editor choice
                     </h3>
                 </div>
-            </div>
-            <div className={"row"}>
-                <div className={'col-lg-9 col-md-12'}>
-                    <div className={"row"}>
-                        <div className={"col-sm-4"}><Col title={"LIFESTYLE"} img={bir} text={"The island country that gave Mayor Pete his name"} /></div>
-                        <div className={"col-sm-4"}><Col title={"SPORTS"} img={ikki} text={"Disney parks expand (good) vegan food options"} /></div>
-                        <div className={"col-sm-4"}><Col title={"INTERNET"} img={uch} text={"A hot springs where clothing is optional after dark"} /></div>
-                        <div className={"col-sm-4"}><Col title={"NEWS"} img={tor} text={"Japanese chef carves food into incredible pieces of art"} /></div>
-                        <div className={"col-sm-4"}><Col title={"NEWS"} img={besh} text={"The Misanthrope Society: A Taipei bar for people who"} /></div>
-                        <div className={"col-sm-4"}><Col title={"TOURISM"} img={olti} text={"From Pakistan to the Caribbean: Curry's journey"} /></div>
-                    </div>
+            </Row>
+            <Row>
+                <Col lg={"9"} md={"12"} >
+                    <Row>
+                        <Col sm={"4"} ><Cols title={"LIFESTYLE"} img={bir} text={"The island country that gave Mayor Pete his name"} /></Col>
+                        <Col sm={"4"} ><Cols title={"SPORTS"} img={ikki} text={"Disney parks expand (good) vegan food options"} /></Col>
+                        <Col sm={"4"} ><Cols title={"INTERNET"} img={uch} text={"A hot springs where clothing is optional after dark"} /></Col>
+                        <Col sm={"4"} ><Cols title={"NEWS"} img={tor} text={"Japanese chef carves food into incredible pieces of art"} /></Col>
+                        <Col sm={"4"} ><Cols title={"NEWS"} img={besh} text={"The Misanthrope Society: A Taipei bar for people who"} /></Col>
+                        <Col sm={"4"} ><Cols title={"TOURISM"} img={olti} text={"From Pakistan to the Caribbean: Curry's journey"} /></Col>
+                    </Row>
 
-                </div>
+                </Col>
                 <div className={"col-lg-3 col-md-12"}>
                     <div className={"position-relative mb-3"}>
                         <img width="100%" src={yetti} alt="" />
@@ -102,7 +105,7 @@ function Editor() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Row>
         </div>
     )
 }
