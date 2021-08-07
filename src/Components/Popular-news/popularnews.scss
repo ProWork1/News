@@ -2,8 +2,7 @@
 
 .editors-news{
     position: relative;
-    margin-top: 30px;
-    padding: 50px 90px;
+    margin-top: 80px;
     font-family: "Montserrat", sans-serif;
     font-weight: initial;
     color: #000000;
@@ -74,13 +73,11 @@
         .font-weight-700{
             font-weight :700;
         }
-        .font-weight-600{
-            font-weight :600;
-        }
     }
 }
 @media (max-width:570px){
     .editors-news{
         padding: 20px;
+        overflow: hidden !important;
     }
 }

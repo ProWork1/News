@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Col, Container, Row } from 'reactstrap'
 import './footer.scss'
 
 const menus = [
@@ -147,52 +148,54 @@ const icon = [
 export default function Footer() {
     return (
         <>
-            <div className="container mt-5 " id = "footer">
+            <Container className=" mt-5 " id = "footer">
                 <hr />
-                <div className="row">
+                <Row>
                     {menus.map(({id, title}) => (
-                        <div className="col-3" key = {title}>
-                            <a href= {id} className = "nav-link">{title}</a>
-                        </div>
+                        <Col xs = "3" key = {title}>
+                            <Link to= {id} className = "nav-link">{title}</Link>
+                        </Col>
                     ))}
-                </div>
-                <div className="row">
-                    <div className="col-3 mt-4" >
+                </Row>
+                <Row>
+                    <Col xs = "3" className=" mt-4" >
                         {menu1.map(({id, title}) => (
-                            <a href= {id} className = "nav-link" key = {title}>{title}</a>
+                            <Link to= {id} className = "nav-link" key = {title}>{title}</Link>
                         ))}
-                    </div>
-                    <div className="col-3 mt-4" >
+                    </Col>
+                    <Col xs = "3" className=" mt-4" >
                         {menu2.map(({id, title}) => (
-                            <a href= {id} className = "nav-link" key = {title}>{title}</a>
+                            <Link href= {id} className = "nav-link" key = {title}>{title}</Link>
                         ))}
-                    </div>
-                    <div className="col-3 mt-4" >
+                    </Col>
+                    <Col xs = "3" className=" mt-4" >
                         {menu3.map(({id, title}) => (
-                            <a href= {id} className = "nav-link" key = {title}>{title}</a>
+                            <Link to= {id} className = "nav-link" key = {title}>{title}</Link>
                         ))}
-                    </div>
-                    <div className="col-3 mt-4" >
+                    </Col>
+                    <Col xs = "3" className=" mt-4" >
                         {menu4.map(({id, title}) => (
-                            <a href= {id} className = "nav-link" key = {title}>{title}</a>
+                            <Link to= {id} className = "nav-link" key = {title}>{title}</Link>
                         ))}
-                    </div>
-                </div>
-                <div className="d-lg-flex d-block justify-content-between align-items-center my-5">
+                    </Col>
+                </Row>
+                <div className="d-lg-flex d-block text-center justify-content-between align-items-center my-5">
                     <div className="footer_logo mb-3">
-                        <img src="./images/logo.svg" alt="" />
+                        <img className = "w-100" src="./images/logo.svg" alt="" />
                     </div>
-                    <div className="d-flex align-items-center">
+                    <div className="d-flex align-items-center ">
                         <div>
                             <p className = "footer_text d-lg-block d-none mt-3">Follow on</p>
                         </div>
-                        {icon.map(({name,url}) => (
-                            <div className="footer_messanger" key = {name}>
-                                <Link to={url}>
-                                    <i className = {name}></i>
-                                </Link>
-                            </div>
-                        ))}
+                        <div className="mx-auto d-flex">
+                            {icon.map(({name,url}) => (
+                                <div className="footer_messanger " key = {name}>
+                                    <Link to={url}>
+                                        <i className = {name}></i>
+                                    </Link>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <hr />
@@ -206,13 +209,13 @@ export default function Footer() {
                         <Link to="#">License.</Link>
                         <Link to="#">Sitemap</Link>
                     </div>
-                    <div className = "d-flex">
-                        <p>© 2020</p>
-                        <Link to="#">@ BootstrapDash, </Link>
+                    <div className = "d-flex flex-wrap">
+                        <p>© 2020 </p>
+                        <Link to="#"> @ BootstrapDash, </Link>
                         <p>Inc.All Rights Reserved.</p>
                     </div>
                 </div>
-            </div>
+            </Container>
         </>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Col, Container, Row } from 'reactstrap'
 import './world_screen.scss'
 
 const card = [
@@ -37,14 +38,14 @@ export default function WorldScreen() {
     
     return (
         <>
-            <div className="container mt-5">
+            <Container className=" mt-5">
                 <p className = "world_theme">
                     world news
                 </p>
-                <div className="row">
+                <Row>
                     {/* map to use; card array */}
                     {card.map(({image,theme,text1,text2,text3}) => (
-                        <div className="col-lg-3 col-md-6 col-12 world_card mt-sm-4" key = {image}>
+                        <Col xs = "12" lg = {{size: 3}} md = {{size: 6}} className="col-lg-3 col-md-6 col-12 world_card mt-sm-4" key = {image}>
                             <div>
                                 <img src={image} alt="" />
                                 <div><p>{theme}</p></div>
@@ -52,10 +53,10 @@ export default function WorldScreen() {
                             <p>{text1}</p>
                             <p>{text2}</p>
                             <Link to = "/" className = "nav-link">{text3}</Link>
-                        </div>
+                        </Col>
                     ))}
-                </div>
-            </div>
+                </Row>
+            </Container>
         </>
     )
 }

@@ -41,7 +41,29 @@
                 font-size: 12px;
                 font-weight: 500;
                 line-height: 1.75;
+                margin: 0 4px;
             }
         }
     }
+}
+
+@media (max-width: 476px) {
+    #footer {
+        overflow: hidden;
+        .nav-link {
+            font-size: 10px;
+            padding: 0 5px 0 5px;
+        }
+        .footer_end {
+            a {
+                font-size: 9px;
+            }
+            div {
+                p {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+    
 }
