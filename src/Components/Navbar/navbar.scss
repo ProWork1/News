@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
-#header{
+#header {
     background: white !important;
-    position: fixed;
     z-index: 999;
     width: 100%;
     .navbar {
@@ -16,7 +15,8 @@
         .navbar-top {
             padding: 32px 0;
             border-bottom: 1px solid #dbdbdb;
-            .navbar-left, .navbar-right {
+            .navbar-left,
+            .navbar-right {
                 display: flex;
                 margin: 0;
                 padding: 0;
@@ -24,17 +24,15 @@
                     list-style: none;
                     color: #000;
                     font-size: 12px;
-                    font-weight: normal;
                     font-stretch: normal;
                     font-style: normal;
                     line-height: 2.08;
                     letter-spacing: normal;
                     padding-right: 42px;
-                    
                 }
             }
-            .navbar-right{
-                li{
+            .navbar-right {
+                li {
                     list-style: none;
                     padding-right: 0;
                     a {
@@ -62,13 +60,14 @@
                         background-color: #000;
                         border-radius: 4px;
                         color: #ffffff;
-                        .i{
+                        .i {
                             width: 20px;
                             height: 20px;
+                            padding-bottom: 4px !important;
                         }
                     }
                 }
-            }    
+            }
             .navbar-brand {
                 margin-right: 0;
                 img {
@@ -83,7 +82,7 @@
                 display: none;
                 cursor: pointer;
             }
-            .nav-item{
+            .nav-item {
                 padding-right: 42px;
                 padding-left: 0;
                 .nav-link {
@@ -99,35 +98,36 @@
                 }
             }
         }
-    }    
+    }
 }
 
-@media (max-width: 999px){
-    .navbar-top{
+@media (max-width: 999px) {
+    .navbar-top {
         .navbar-brand img {
             width: 170px;
         }
-        .navbar-left, .navbar-right {
-           display: none !important;
+        .navbar-left,
+        .navbar-right {
+            display: none !important;
         }
         .social-media {
             display: none !important;
         }
     }
-    .navbar-bottom-menu{ 
+    .navbar-bottom-menu {
         .navbar-toggler {
             position: absolute;
             top: 30px;
             right: 0;
             color: #0a62fb;
-        }   
-        .collapse{
+        }
+        .collapse {
             right: 0 !important;
             width: 80%;
             position: fixed;
             background: white;
         }
-        .navbar-collapse{
+        .navbar-collapse {
             button {
                 margin-bottom: 10px;
             }

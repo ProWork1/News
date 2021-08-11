@@ -1,13 +1,13 @@
 import React from 'react'
-import { Col, Container, Row, Button } from 'reactstrap'
+import { Col, Row, Button } from 'reactstrap'
 import './blog.scss'
 
 export default function Blog() {
     return (
         <>
-            <Container className=" mt-5" id = "blog">
+            <div className="mt-5" id="blog">
                 <Row>
-                    <Col xs = "12" className="text-center blog_theme">
+                    <Col xs="12" className="text-center blog_theme">
                         <p>Use Our Compilation Of Most Famous Museums</p>
                         <Button className = "btn-dark">News</Button>
                         <div>
@@ -20,7 +20,7 @@ export default function Blog() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs = "12" lg = {{size:10, offset:1}} className="mt-4 blog_img">
+                    <Col xs="12" lg={{size:10, offset:1}} className="mt-4 blog_img">
                         <img src="./images/news-1.jpg" alt="" />
                     </Col>
                     <p>
@@ -28,12 +28,12 @@ export default function Blog() {
                     </p>
                 </Row>
                 <Row>
-                    <Col xs = "12" lg = {{size:10, offset:1}} className="mt-4">
+                    <Col xs="12" lg={{size:10, offset:1}} className="mt-4">
                         <Row>
-                            <Col xs = "12" lg = {{size:6}} className="blog_picture">
+                            <Col xs="12" lg={{size:6}} className="blog_picture">
                                 <img src="./images/news-2.jpg" alt="" />
                             </Col>
-                            <Col xs = "12" lg = {{size:6}} className=" blog_text">
+                            <Col xs="12" lg={{size:6}} className="blog_text">
                                 <p>TravelTips: How Do I Live On The Cheap?</p>
                                 <p>He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement. For many, however, the campaign has become less about backing Macron and instead about voting against Le Pen, the National Front candidate.
                                 </p>
@@ -42,7 +42,7 @@ export default function Blog() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs = "12" className=" blog_section2">
+                    <Col xs="12" className="blog_section2">
                         <p>
                             He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche!     movement. For many, however, the campaign has become less about backing Macron and instead about voting     against Le Pen, the National Front candidate.
                         </p>
@@ -51,7 +51,7 @@ export default function Blog() {
                         </p>
                     </Col>
                 </Row>
-            </Container>
+            </div>
         </>
     )
 }

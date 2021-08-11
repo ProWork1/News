@@ -5,142 +5,142 @@ import './footer.scss'
 
 const menus = [
     {
-        id: "#",
+        id: "/",
         title: "News"
     },
     {
-        id: "#",
+        id: "/",
         title: "World"
     },
     {
-        id: "#",
+        id: "/",
         title: "Features"
     },
     {
-        id: "#",
+        id: "/",
         title: "More"
     },
 ]
 const menu1 = [
     {
-        id: "#",
+        id: "/",
         title: "Home"
     },
     {
-        id: "#",
+        id: "/",
         title: "World"
     },
     {
-        id: "#",
+        id: "/",
         title: "Magazine"
     },
     {
-        id: "#",
+        id: "/",
         title: "Business"
     },
     {
-        id: "#",
+        id: "/",
         title: "Politics"
     },
 ]
 const menu2 = [
     {
-        id: "#",
+        id: "/",
         title: "Sports"
     },
     {
-        id: "#",
+        id: "/",
         title: "Art"
     },
     {
-        id: "#",
+        id: "/",
         title: "Magazine"
     },
     {
-        id: "#",
+        id: "/",
         title: "Real estate"
     },
     {
-        id: "#",
+        id: "/",
         title: "Travel"
     },
     {
-        id: "#",
+        id: "/",
         title: "Author"
     },
 ]
 const menu3 = [
     {
-        id: "#",
+        id: "/",
         title: "Photography"
     },
     {
-        id: "#",
+        id: "/",
         title: "Video"
     },
     {
-        id: "#",
+        id: "/",
         title: "Newsletters"
     },
     {
-        id: "#",
+        id: "/",
         title: "Live Events"
     },
     {
-        id: "#",
+        id: "/",
         title: "Stores"
     },
     {
-        id: "#",
+        id: "/",
         title: "Jobs"
     },
 ]
 const menu4 = [
     {
-        id: "#",
+        id: "/",
         title: "RSS"
     },
     {
-        id: "#",
+        id: "/",
         title: "FAQ"
     },
     {
-        id: "#",
+        id: "/",
         title: "User Agreement"
     },
     {
-        id: "#",
+        id: "/",
         title: "Privacy"
     },
     {
-        id: "#",
+        id: "/",
         title: "About us"
     },
     {
-        id: "#",
+        id: "/",
         title: "Contact"
     },
 ]
 
 const icon = [
     {
-        url: "#",
+        url: "/",
         name: "fab fa-instagram"
     },
     {
-        url: "#",
+        url: "/",
         name: "fab fa-facebook-f"
     },
     {
-        url: "#",
+        url: "/",
         name: "fab fa-youtube"
     },
     {
-        url: "#",
+        url: "/",
         name: "fab fa-linkedin-in"
     },
     {
-        url: "#",
+        url: "/",
         name: "fab fa-twitter"
     },
 ]
@@ -148,40 +148,40 @@ const icon = [
 export default function Footer() {
     return (
         <>
-            <Container className=" mt-5 " id = "footer">
+            <Container className=" mt-5 " id="footer">
                 <hr />
                 <Row>
                     {menus.map(({id, title}) => (
-                        <Col xs = "3" key = {title}>
-                            <Link to= {id} className = "nav-link">{title}</Link>
+                        <Col xs="3" key={title}>
+                            <Link to={id} className="nav-link">{title}</Link>
                         </Col>
                     ))}
                 </Row>
                 <Row>
-                    <Col xs = "3" className=" mt-4" >
+                    <Col xs="3" className="mt-4" >
                         {menu1.map(({id, title}) => (
-                            <Link to= {id} className = "nav-link" key = {title}>{title}</Link>
+                            <Link to={id} className="nav-link" key={title}>{title}</Link>
                         ))}
                     </Col>
-                    <Col xs = "3" className=" mt-4" >
+                    <Col xs="3" className="mt-4" >
                         {menu2.map(({id, title}) => (
-                            <Link href= {id} className = "nav-link" key = {title}>{title}</Link>
+                            <Link href={id} className="nav-link" key={title}>{title}</Link>
                         ))}
                     </Col>
-                    <Col xs = "3" className=" mt-4" >
+                    <Col xs="3" className="mt-4" >
                         {menu3.map(({id, title}) => (
-                            <Link to= {id} className = "nav-link" key = {title}>{title}</Link>
+                            <Link to={id} className="nav-link" key={title}>{title}</Link>
                         ))}
                     </Col>
-                    <Col xs = "3" className=" mt-4" >
+                    <Col xs="3" className="mt-4" >
                         {menu4.map(({id, title}) => (
-                            <Link to= {id} className = "nav-link" key = {title}>{title}</Link>
+                            <Link to={id} className="nav-link" key={title}>{title}</Link>
                         ))}
                     </Col>
                 </Row>
                 <div className="d-lg-flex d-block text-center justify-content-between align-items-center my-5">
                     <div className="footer_logo mb-3">
-                        <img className = "w-100" src="./images/logo.svg" alt="" />
+                        <img className="w-100" src="./images/logo.svg" alt="" />
                     </div>
                     <div className="d-flex align-items-center ">
                         <div>
@@ -189,9 +189,9 @@ export default function Footer() {
                         </div>
                         <div className="mx-auto d-flex">
                             {icon.map(({name,url}) => (
-                                <div className="footer_messanger " key = {name}>
+                                <div className="footer_messanger" key={name}>
                                     <Link to={url}>
-                                        <i className = {name}></i>
+                                        <i className={name}></i>
                                     </Link>
                                 </div>
                             ))}
@@ -201,17 +201,17 @@ export default function Footer() {
                 <hr />
                 <div className="footer_end d-lg-flex d-block justify-content-between">
                     <div className="d-flex flex-wrap">
-                        <Link to="#">Terms of Use.</Link>
-                        <Link to="#">Privacy Policy.</Link>
-                        <Link to="#">Accessibility & CC.</Link>
-                        <Link to="#">AdChoices.</Link>
-                        <Link to="#">Advertise with us Transcripts.</Link>
-                        <Link to="#">License.</Link>
-                        <Link to="#">Sitemap</Link>
+                        <Link to="/">Terms of Use.</Link>
+                        <Link to="/">Privacy Policy.</Link>
+                        <Link to="/">Accessibility & CC.</Link>
+                        <Link to="/">AdChoices.</Link>
+                        <Link to="/">Advertise with us Transcripts.</Link>
+                        <Link to="/">License.</Link>
+                        <Link to="/">Sitemap</Link>
                     </div>
                     <div className = "d-flex flex-wrap">
                         <p>© 2020 </p>
-                        <Link to="#"> @ BootstrapDash, </Link>
+                        <Link to="/"> @ BootstrapDash, </Link>
                         <p>Inc.All Rights Reserved.</p>
                     </div>
                 </div>

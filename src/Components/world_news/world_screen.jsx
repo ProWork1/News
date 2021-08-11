@@ -35,7 +35,6 @@ const card = [
 ]
 
 export default function WorldScreen() {
-    
     return (
         <>
             <Container className=" mt-5">

@@ -7,7 +7,7 @@ function col({ title, img, text }) {
                 <img src={img} alt="" />
                 <span className={'img-title'}>{title}</span>
             </div>
-            <h5 class="font-weight-600 mt-3 mb-5 ">
+            <h5 className="font-weight-600 mt-3 mb-5 ">
                 {text}
             </h5>
         </div>
