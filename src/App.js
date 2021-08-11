@@ -6,6 +6,7 @@ import Footer from './Components/footer/footer';
 import PopularNews from './Components/Popular-news/PopularNews';
 import WorldScreen from './Components/world_news/world_screen';
 import BlogScreen4 from './Components/blogSection4/blogScreen4';
+import HowLong from './Components/howLong/HowLong';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <WorldScreen/>
         <PopularNews />
         <Footer/>
+        <HowLong/>
       </div>
       
     </div>
