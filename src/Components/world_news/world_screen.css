@@ -1,0 +1,99 @@
+.world_theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: #3e8177;
+  margin-bottom: 22px;
+  text-transform: capitalize;
+}
+
+.world_theme::after {
+  content: "_____";
+  margin: 0 0 15px 10px;
+  font-size: 25px;
+}
+
+.world_card div {
+  position: relative;
+  overflow: hidden;
+}
+
+.world_card div img {
+  width: 100%;
+  -webkit-transition: .4s all linear;
+  transition: .4s all linear;
+}
+
+.world_card div div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  padding: 15px 10px 0px;
+  background-color: black;
+  text-align: center;
+  -webkit-transition: .4s all linear;
+  transition: .4s all linear;
+}
+
+.world_card div div p {
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.33em;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+}
+
+.world_card div:hover img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.world_card div:hover div {
+  background-color: #0A62FA;
+}
+
+.world_card p:nth-child(2) {
+  width: 270px;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 16px 0 8px;
+}
+
+.world_card p:nth-child(3) {
+  width: 260px;
+  font-size: 15px;
+  margin: 0 0 8px;
+  word-spacing: 3px;
+  letter-spacing: .5px;
+}
+
+.world_card .nav-link {
+  text-transform: capitalize;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 0 0 0;
+}
+
+.world_card .nav-link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .world_card p:nth-child(2) {
+    width: 100%;
+  }
+  .world_card p:nth-child(3) {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=world_screen.css.map */

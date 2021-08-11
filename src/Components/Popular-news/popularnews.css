@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+.editors-news {
+  position: relative;
+  margin-top: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: initial;
+  color: #000000;
+  text-align: left;
+}
+
+.editors-news .main-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.editors-news .main-title .col-lg-3 .d-flex {
+  position: relative;
+}
+
+.editors-news .main-title .col-lg-3 .d-flex .section-title {
+  font-size: 22px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  color: #3e8177;
+  margin-bottom: 30px;
+}
+
+.editors-news .main-title .col-lg-3 .d-flex .section-title:after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #3e8177;
+  position: absolute;
+  left: 165px;
+  top: 13px;
+}
+
+.editors-news .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.editors-news .card-content .image-hover {
+  overflow: hidden;
+}
+
+.editors-news .card-content .image-hover .thumb-title {
+  padding: 14px 24px;
+  background: #000;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.editors-news .card-content .image-hover .thumb-title, .editors-news .card-content .image-hover img {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.editors-news .card-content .image-hover:hover img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.editors-news .card-content .image-hover:hover .thumb-title {
+  background: #0a62fb;
+}
+
+.editors-news .card-content .font-weight-700 {
+  font-weight: 700;
+}
+
+@media (max-width: 570px) {
+  .editors-news {
+    padding: 20px;
+    overflow: hidden !important;
+  }
+}
+/*# sourceMappingURL=popularnews.css.map */

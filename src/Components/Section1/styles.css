@@ -1,0 +1,27 @@
+.col-text {
+  margin-top: 20px;
+}
+
+.col-text .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col-text .header .img {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.col-text .header p {
+  font-size: 12px;
+  color: #b5b5b5;
+  margin: -2px 0 0 15px;
+}
+
+.col-text p {
+  line-height: 1.29;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
